@@ -1,0 +1,88 @@
+
+
+body {
+    font-family: "Broadway", monospace;
+    min-height: 400px;
+    background-image: linear-gradient(340deg, #6f5ada, #454062);
+    background-size: 210vh;
+    background-color: black;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .page-title {
+    color: #bb62e2;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #eadaf3;
+    margin-top: 5px;
+  }
+  
+  .alura-logo {
+    width: 300px;
+    top: 150px;
+    padding-right: 400px;
+  }
+  
+  img {
+    position: absolute;
+    top: 132px;
+    left: 65px;
+    width: 350px;
+    border-radius: 46%;
+    height: 265px;
+  }
+  
+  .music {
+    font-family: "Console";
+    font-size: 22px;
+    position: absolute;
+    top: 115px;
+    left: 530px;
+  }
+  
+  .label {
+    font-size: 14px;
+    font-family: "Console";
+    position: absolute;
+    top: 250px;
+    left: 440px;
+  }
+  
+  input {
+    width: 75px;
+    height: 20px;
+    background-color: lightgrey;
+  }
+  
+  .celsius {
+    width: 30px;
+    height: 15px;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+  }
+  
+  .farenheit {
+    width: 30px;
+    height: 15px;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+  }
+  
+  .player {
+    position: absolute;
+    top: 180px;
+    left: 485px;
+    color: black;
+  }
+  
