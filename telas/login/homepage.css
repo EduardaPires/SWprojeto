@@ -1,0 +1,42 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    background-color: #3C6D9A;
+}
+body{
+   text-align: center;
+}
+h1{
+    font-size: 1cm;
+}
+h2{
+    margin-top: 10px;
+    padding: 10px;
+    font: size 15px;;
+}
+main{
+    padding: 55px;
+}
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+li{
+    display: inline-block;
+    flex-direction: row;
+   
+    margin: 50px;
+}
+a{
+    color: white;
+}
+a:hover{
+    color:black;
+}
