@@ -1,0 +1,180 @@
+
+
+body {
+    width: 800px; 
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: rgb(236, 236, 236);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    height: 700px;
+  }
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 100px;
+    border-radius: 3px;
+    font-weight: lighter;
+}
+
+.direita {
+    margin-left: 150px;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    padding: 20px;
+   
+}
+
+.esquerda {
+    margin-left: -500px;
+    margin-top: -700px;
+    width: 700px;
+    padding: 50px;
+    height: 120px;
+}
+
+.descricao {
+   background-color: #d5d4d4;
+    padding: 25px;
+    font-size: 23px;
+    width: 730px;
+    height: 430px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgb(192, 192, 192);
+    
+}
+
+.listademed {
+    background-color: #95D7E5;
+    font-size: 23px;
+    width: 400px;
+    height: 580px;
+    border: 1px solid #747474;
+    overflow-y: scroll;
+    position: sticky;
+}
+
+.busca {
+    background-color: #d5d4d4;
+    width: 392px;
+    height: 40px;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #747474;
+    padding-left: 5px;
+    border-radius: px;
+}
+
+#pesquisa {
+    width: 300px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+.buscar {
+    background-color: #86aadc;
+    padding: 10px;
+    text-decoration: none;
+    height: 100%;
+    border-radius: 3px;
+    right: 800px;
+}
+
+a button {
+    background-color: rgb(96, 185, 96);
+    position: absolute;
+    width: 19px;
+    height: 20px;
+    left: -30px;
+    padding-bottom: 5px;
+}
+
+li a {
+    list-style: none;
+    position:relative;
+    border-bottom: 1px solid #769edb;
+    padding-left: 30px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+li {
+    list-style: none;
+    height: 33px;
+}
+
+.red {
+    background-color: red;
+}
+
+.buscar:hover {
+    background: #636bb8;
+    color: black;
+}
+
+.barra {
+    width: 113%;
+    height: 10%;
+    background-color: #3C6D9A ;
+    align-items: flex-end;
+    position: absolute;
+    margin-left: -667px;
+    margin-top: -10px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+   
+}
+
+a:hover {
+    background-color: #7dc2d1;
+}
+
+.adicionar {
+    background-color: #95D7E5;
+    padding: 10px;
+    height: 40px;
+    border-radius: 3px;
+    border: none; 
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+}
+
+#edit {
+
+    border-radius: 3px;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 20px;
+    color: rgb(66, 66, 66);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.add:hover {
+    background-color: #426280; 
+    color: rgb(109, 109, 109);
+}
+ 
+#admed {
+    float: right;
+    width: 108%;
+    height: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+#add {
+    float: right; 
+    margin-top: 5px;
+}

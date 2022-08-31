@@ -9,9 +9,11 @@ header{
     align-items: center;
     font-size: 30px;
     background-color: #3C6D9A;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
    text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
 }
 h1{
     font-size: 1cm;

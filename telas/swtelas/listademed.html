@@ -1,0 +1,49 @@
+<html>
+    <head>
+      <title> Tela de remédios</title>
+      <link rel="stylesheet" href="listademed.css">
+     
+    </head>
+    
+    <body>
+
+    <div class="barra"> 
+    </div>
+        <div class="direita">
+            <h1> BUSCOPAN </h1>
+            <br>
+            <br>
+            <div class="descricao">
+                <p> <b> Composição: </b> 
+                    500mg paracetamol
+                 + 10mg butibrometo de escopolamina</p>
+                 <br>
+                <p> <b>Para que é utilizado: </b></p>
+                <br>
+                <p> <b> Quantidade em estoque: </b></p>
+                <br>
+                <p> <b>Histórico de uso: </b></p> </div></div>
+        
+                <nav class="menuConteiner">
+        <div class="esquerda">
+            <div class="busca">
+                <input type="text" placeholder="Pesquise um medicamento" id="pesquisa">
+                <a href="#" class="buscar" onclick="pesquisar()"> BUSCAR </a>
+            </div>
+        
+          <div class="listademed"> 
+            <ul id="lista" class="lista">
+                <li> <a class="med" href="listademed.html">Buscopan  <button class="estoque"></button></a></li>
+                <li><a class="med" href="">Tylenol <button class="estoque red"> </button>  </a> </li>
+                <li><a class="med" href="">Propanolol <button class="estoque"> </button> </a> </li>
+                
+                </ul>
+                <a href="addmed.html" class="med adicionar" id="admed"> + Adicionar </a> 
+            </div>
+        </div></nav>
+       
+
+        <script src="listamed.js"></script>
+    </body>
+    
+    </html>

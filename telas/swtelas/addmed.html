@@ -1,0 +1,56 @@
+<html>
+    <head>
+      <title> Tela de remédios</title>
+      <link rel="stylesheet" href="listademed.css">
+     
+    </head>
+    
+    <body>
+
+    <div class="barra"> 
+    </div>
+        <div style="text-align: left;" class="direita">
+            
+            <h1> <input class="nomeadd" style="text-align:center; height: 60px; width:400px; 
+                border:none; border-radius:3px; box-shadow: 5px 5px 8px rgb(192, 192, 192);
+                font-size: 25px; background-color: #d5d4d4;" type="text" 
+                placeholder="Digite o nome do medicamento"> </h1> 
+            <br>
+            <br>
+            <div class="descricao">
+                <p> <b>Composição: </b><input id="edit" class="comp" style="height: 30px; width:300px; 
+                font-size: 15px;" type="text"></p> <br>
+                <p> <b>Para que é utilizado: </b><input id="edit" class="utilidade" style="height: 30px; width:300px; 
+                font-size: 15px;" type="text"> </p> <br>
+                <p> <b>Quantidade em estoque: </b><input id="edit" class="quantidade" style="height: 30px; width:300px; 
+                font-size: 15px;" type="text"></p> <br>
+                <p> <b>Histórico de uso: </b>
+                    <input id="edit" class="hist" style="height: 30px; width:300px; font-size: 15px;" type="text">
+                </p>
+                <button class="buscar add" id="add" style="height: 40px; 
+                background-color: #5a84ac; color: white; font-size: 18px; 
+                border: none;" > ADICIONAR </button> </div></div>
+        
+        <nav class="menuConteiner">
+        <div class="esquerda">
+            <div class="busca">
+                <input type="text" placeholder="Pesquise um medicamento" id="pesquisa">
+                <a href="#" class="buscar" onclick="pesquisar()"> BUSCAR </a>
+            </div>
+        
+            <div class="listademed"> 
+                <ul id="lista" class="lista">
+                    <li> <a class="med" href="listademed.html">Buscopan  <button class="estoque"> </button>  </a></li>
+                    <li><a class="med" href="">Tylenol <button class="estoque red"> </button>  </a> </li>
+                    <li><a class="med" href="">Propanolol <button class="estoque"> </button> </a> </li>
+                    
+                    </ul>
+                    <a href="addmed.html" class="med adicionar" id="admed"> + Adicionar </a> 
+                </div>
+            </div></nav>
+       
+
+        <script src="listamed.js"></script>
+    </body>
+    
+    </html>

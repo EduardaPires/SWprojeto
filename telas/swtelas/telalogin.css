@@ -127,6 +127,10 @@ body {
       margin-right: auto;
     }
 
+    li {
+      display: inline-block;
+    }
+
     
 
    
