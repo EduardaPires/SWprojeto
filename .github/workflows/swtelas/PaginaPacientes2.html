@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="=pt-br">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pacientes</title>
+    <script src="https://kit.fontawesome.com/46fe8c85d2.js" crossorigin="anonymous"></script>
+    <!--(deixar aq pra realocar o css depois)<link href="./css/stylePaginaPacientes.css" rel="stylesheet">-->
+    <style>
+       *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #title{
+    padding-right: 60%;
+    line-height: 10px;
+    
+}
+
+.logo {
+    font-size: 3rem;
+    margin-left: 100px;
+    padding-top: 50px;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100px;
+    background-color: #3C6D9A ;
+    margin-top: -10px;
+    color: white;
+    
+}
+
+#title{
+    padding-right: 60%;
+    line-height: 10px;
+    
+}
+
+.logo {
+    font-size: 3rem;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+
+.li{
+    display: inline-block;
+    flex-direction: row;
+    margin-right: 30px;
+}
+.a{
+    color: white;
+}
+.a:hover{
+    color:black;
+}
+        .pesquisar{
+            display: flex;
+            background-color: #D9D9D9;
+            width: 100%;
+            
+        }
+        .pesquisa{
+            width: 100%;
+            height: 10px;
+        }
+        form{
+           margin-top: 10px;
+           margin-bottom: 10px;
+           margin-left: 5px;
+            width: 100%;
+            background-color: #D9D9D9;
+        }
+        form input{
+            width: 1160px;
+            height: 25px;
+            font-size: 1.6em;
+        }
+         form button{
+            margin-left: 8px;
+            font-size: 1.6em;
+        }
+        main{
+           height: 270px;
+           width: 100%;
+           background-color: #3E78AD;
+        }
+        img{
+            width: 160px;
+        }
+
+        .conteudo{
+            display: table;
+            width: 100%;
+            background-color: #AADCE8;
+        }
+        .imagem{
+            display: table-cell;
+            float: left;
+            margin-top: 50px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .texto{
+            display:table-cell;
+            float: left;
+        }
+        h3{
+            padding: 6px;
+        }
+        h4{
+            margin-bottom: 20px;
+        }
+        .codigoDoPaciente{
+            font-size: 24px;
+            margin-left: 215%;
+            margin-top: 6%;
+        }
+        .botaomedicamentos{
+            margin-top: 160px;
+            margin-left: 500px;
+            background-color: #23415F;
+            width: 120px;
+            height: 40px;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .titulohistorico{
+            padding: 30px;
+            margin-left: 20px;
+            font-size: 1.4em;
+        }
+        .subtitulohistorico{
+            margin-left: 50px;
+            margin-top: -15px;
+            font-size: 1.2em;
+        }
+
+        form {
+            align-items: center;
+        }
+        
+        .container{
+            padding: 30px;
+            margin-left: 20px;
+            border: 2px solid #23415F;
+            border-radius: 5px;
+            padding: 30px 20px;
+            height: 100%;
+        }
+        .novo-registro-barradeinput{
+            background-color: #23415F;
+            border-radius: 5px;
+            padding: 30px 20px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+            display: flex;
+        }
+        .novo-registro-barradeinput input{
+            flex: 3;
+            font-size: 1rem;
+            border: 3px solid #D9D9D9;
+            border-radius: 5px;
+            padding: 0 12px 100px;
+        }
+        .novo-item-input{
+            width: 1010px;
+            height: 160px;
+            border-radius: 5px;
+            text-align: left
+        }
+        .novo-item-input:focus{
+            outline: none;
+            border-color: #3E78AD;
+        }
+        .novo-item-input-codigo{
+            margin-left: 10px;
+        }
+        .novo-item-input-codigo:focus{
+            outline: none;
+            border-color: #3E78AD;
+        }
+        .botaoaddregistro{
+            flex: 0.57;
+            border-radius: 5px;
+            height: 40px;
+            font-size: 1rem;
+            border: none;
+            background-color: #3E78AD;
+            color: white;
+            padding: 12px;
+            margin-left: 16px;
+            margin-right: -3px;
+            cursor: pointer;
+        }
+        .conjuntodatas{
+            margin-top: 40px;
+            margin-left: 45px;  
+        }
+        
+        .subtitulos{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .datas{
+            margin-left: 45px;
+            
+        }
+        .historicodopaciente{
+           margin-left: 180px;
+        }
+        .profissionalresponsavel{
+          margin-right: 45px;
+        }
+
+        .item-registro{
+            display: flex;
+            flex-flow: row wrap;
+            background-color: #23415F;
+            color: white;
+            height: 0.5%;
+            width: 25%;
+            margin-bottom: 0.5%;
+            margin-left: 33%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            line-height: 25px;
+            font-size: 20px;
+            padding: 1px 12px;
+            cursor: pointer;
+        }
+        .item-registro-codigo{
+            display: flex;
+            flex-flow: row wrap;
+            background-color: #23415F;
+            color: white;
+            height: 0.5%;
+            width: 25%;
+            margin-bottom: 0.5%;
+            margin-left: 70%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            line-height: 25px;
+            font-size: 20px;
+            padding: 1px 12px;
+            cursor: pointer;
+        }
+        
+        .registros-barradeinput{
+        }
+        .error{
+            border: 2px solid red !important;
+        }
+        .error::placeholder{
+            color: red;
+        }
+
+        #search {
+            width: 95%;
+        }
+
+        main {
+            background-color: #AADCE8;
+            width: 100%;
+            margin-right: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="barra"> 
+        <div id="title"> 
+            <h1 class="logo">LOGO</h1>
+        </div>
+
+        <ul>
+            <a class="a" href="listademed.html"><li class="li">Estoque</li></a>
+            
+            <a class="a" href="homepage.html"><li class="li">Menu</li></a>
+            <br>
+        </ul>
+    </header>
+    <div class="pesquisar cabecalho">
+        <form action="#" method="post">
+            <input type="text" name="search" id="search" placeholder="Buscar um paciente" required>
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+    </div>
+
+    <main>
+        <div class="conteudo">
+            <div class="imagem">
+                <img src="imgPaciente.png" alt="">
+            </div>
+            <div class="texto">
+                <div class="codigoDoPaciente">Código identificador</div>
+                <h3>Nome: MARIA DA SILVA CAMPOS</h3>
+                <h3>Idade: 68 ANOS</h3>
+                <h3>Data de nascimento: 19/10/1954</h3>
+                <h3>Médico responsável: Dra. Milena Avelar Costa</h3>
+            </div>
+            <button class="botaomedicamentos"><a href="medicamentos.html" style="color: white; text-decoration: none;">MEDICAMENTOS</a></button>
+        </div>
+    </main>
+
+    <section class="historico">
+        <div class="titulohistorico">
+            <h1>SEÇÃO DE HISTÓRICO</h1>
+        </div>
+        <div class="subtitulohistorico">
+            <h4>Adcione um novo registro sobre o paciente</h4>
+        </div>
+
+        <!-- O container vai englobar a barra de colocar o texto que está junto do botão, e as barras com os registros que serão enviados -->
+        <div class="container">
+            <div class="novo-registro-barradeinput">
+                <input type="text"
+                 class="novo-item-input" 
+                 placeholder="Escreva as informações do paciente"
+                 />
+                 <input type="text"
+                 class="novo-item-input-codigo" 
+                 placeholder="Escreva o código identificador"
+                 />
+                 <button class="botaoaddregistro">REGISTRAR</button>
+            </div>
+                <!--<div class="tarefas-barradeinput"></div>-->
+         <section class="subtitulos">
+            <div class="datas">
+                <h2>DATAS</h2>
+            </div>
+    
+            <div class="historicodopaciente">
+                <h2>HISTÓRICO DO PACIENTE</h2>
+            </div>
+    
+            <div class="profissionalresponsavel">
+                <h2>PROFISSIONAL RESPONSÁVEL</h2>
+            </div>
+         </section>
+
+         <div id="datasRegistros">
+         </div>
+
+          <div class="registros-barradeinput">
+          </div>
+
+          <div class="registros-barradeinput-codigo">
+          </div>
+
+        </div>
+        
+    </section>
+
+
+    <script src="PaginaPacientes2JS.js"></script>
+</body>
+</html>
