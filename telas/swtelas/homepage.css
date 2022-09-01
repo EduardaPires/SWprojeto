@@ -29,6 +29,8 @@ main{
 #title{
     flex-direction: column;
     line-height: 10px;
+    margin-left: 20px;
+    color: white;
 }
 li{
     display: inline-block;

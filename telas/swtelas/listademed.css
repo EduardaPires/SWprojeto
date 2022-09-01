@@ -19,6 +19,29 @@ h1 {
     font-weight: lighter;
 }
 
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    background-color: #3C6D9A;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10%;
+}
+
+#title{
+    padding-right: 60%;
+    line-height: 10px;
+    
+}
+
+.logo {
+    font-size: 3rem;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
 .direita {
     margin-left: 150px;
     align-items: center;
@@ -119,17 +142,18 @@ li {
 }
 
 .barra {
-    width: 113%;
+    width: 103%;
     height: 10%;
     background-color: #3C6D9A ;
-    align-items: flex-end;
     position: absolute;
-    margin-left: -667px;
+    margin-left: -500px;
     margin-top: -10px;
     color: white;
-    text-align: center;
     font-size: 25px;
-   
+   display: flex;
+   margin-right: 60%;
+
+
 }
 
 a:hover {
@@ -158,6 +182,7 @@ a:hover {
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
+  
 }
 
 .add:hover {
@@ -177,4 +202,16 @@ a:hover {
 #add {
     float: right; 
     margin-top: 5px;
+}
+
+.li{
+    display: inline-block;
+    flex-direction: row;
+    margin-right: 30px;
+}
+.a{
+    color: white;
+}
+.a:hover{
+    color:black;
 }

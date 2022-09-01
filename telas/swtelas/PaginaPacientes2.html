@@ -14,10 +14,64 @@
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
         }
-        header{
+
+        #title{
+    padding-right: 60%;
+    line-height: 10px;
+    
+}
+
+.logo {
+    font-size: 3rem;
+    margin-left: 100px;
+    padding-top: 50px;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100px;
+    background-color: #3C6D9A ;
+    margin-top: -10px;
+    color: white;
+    
+}
+
+#title{
+    padding-right: 60%;
+    line-height: 10px;
+    
+}
+
+.logo {
+    font-size: 3rem;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+
+.li{
+    display: inline-block;
+    flex-direction: row;
+    margin-right: 30px;
+}
+.a{
+    color: white;
+}
+.a:hover{
+    color:black;
+}
+        .pesquisar{
             display: flex;
             background-color: #D9D9D9;
             width: 100%;
+            
         }
         .pesquisa{
             width: 100%;
@@ -51,7 +105,7 @@
         .conteudo{
             display: table;
             width: 100%;
-            background-color: #3E78AD;
+            background-color: #AADCE8;
         }
         .imagem{
             display: table-cell;
@@ -77,9 +131,9 @@
         }
         .botaomedicamentos{
             margin-top: 160px;
-            margin-left: 440px;
+            margin-left: 500px;
             background-color: #23415F;
-            width: 150px;
+            width: 120px;
             height: 40px;
             color: white;
             border-radius: 5px;
@@ -96,6 +150,10 @@
             margin-left: 50px;
             margin-top: -15px;
             font-size: 1.2em;
+        }
+
+        form {
+            align-items: center;
         }
         
         .container{
@@ -212,16 +270,39 @@
         .error::placeholder{
             color: red;
         }
+
+        #search {
+            width: 95%;
+        }
+
+        main {
+            background-color: #AADCE8;
+            width: 100%;
+            margin-right: none;
+        }
     </style>
 </head>
 <body>
-    <header class="cabecalho">
+
+    <header class="barra"> 
+        <div id="title"> 
+            <h1 class="logo">LOGO</h1>
+        </div>
+
+        <ul>
+            <a class="a" href="listademed.html"><li class="li">Estoque</li></a>
+            
+            <a class="a" href="homepage.html"><li class="li">Menu</li></a>
+            <br>
+        </ul>
+    </header>
+    <div class="pesquisar cabecalho">
         <form action="#" method="post">
             <input type="text" name="search" id="search" placeholder="Buscar um paciente" required>
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
 
-    </header>
+    </div>
 
     <main>
         <div class="conteudo">
